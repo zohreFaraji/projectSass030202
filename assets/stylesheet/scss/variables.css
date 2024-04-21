@@ -1,0 +1,39 @@
+.nav_btn {
+  width: 21%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav_btn > a > .rec {
+  width: 210px;
+  height: 62px;
+  background-color: rgb(243, 66, 76);
+  border-radius: 15px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 10px;
+  top: 0;
+}
+.nav_btn > a > .rec p {
+  color: white;
+  font-size: 17px;
+  line-height: 15px;
+  z-index: 3;
+}
+.nav_btn > a > .rec::before {
+  content: "";
+  width: 194px;
+  height: 78px;
+  border: 3px solid rgb(243, 66, 76);
+  border-radius: 15px;
+  padding-right: 20px;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  right: -7px;
+}
+.nav_btn > a > .rec:hover::before {
+  width: 70px;
+}/*# sourceMappingURL=variables.css.map */

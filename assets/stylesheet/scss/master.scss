@@ -1,0 +1,230 @@
+@use 'variables';
+@use '../css/global';
+
+.top_header {
+    width: variables.$max_width;
+    height: 100vh;
+    background-image: variables.$bg_home;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+
+    .row {
+        height: 777px;
+
+        >header {
+            width: variables.$max_width;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+
+            >nav {
+                width: 85%;
+                height: inherit;
+                display: flex;
+                justify-content: space-between;
+
+                >a {
+                    display: flex;
+                    align-items: center;
+
+                    >.nav_logo {
+                        width: 184px;
+                        height: 70px;
+
+                        >img {
+                            width: variables.$max_width;
+                            height: variables.$max_height;
+                            // object-fit: cover;
+                        }
+                    }
+                }
+
+                >.nav_menu {
+                    width: 50%;
+                    height: inherit;
+
+                    >ul {
+                        height: variables.$max_height;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin: 0 10px;
+
+                        >li {
+                            >a {
+                                color: white;
+                                display: flex;
+                                height: variables.$max_height;
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                letter-spacing: 1px;
+                                text-transform: capitalize;
+                                transition: all .5s ease-in-out;
+
+                                &:hover {
+                                    color: variables.$bg_org;
+                                }
+                            }
+
+                            >.home {
+                                color: variables.$bg_org;
+                            }
+                        }
+                    }
+                }
+                // >.nav_btn {
+                //     width: 21%;
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: end;
+
+                //     >a {
+                //         // >div {
+                //             // margin: 31px 0;
+
+                //             >.rec {
+                //                 width: 210px;
+                //                 height: 64px;
+                //                 background-color: variables.$bg_org;
+                //                 border-radius: 15px;
+                //                 z-index: 2;
+                //                 display: flex;
+                //                 align-items: center;
+                //                 justify-content: center;
+                //                 position: relative;
+                //                 right: 0;
+                //                 top: 0;
+
+                //                 p {
+                //                     color: white;
+                //                     font-size: 17px;
+                //                     // font-weight: bold;
+                //                     line-height: 15px;
+                //                     z-index: 3;
+                //                 }
+
+                //                 &::before {
+                //                     content: '';
+                //                     width: 196px;
+                //                     height: 78px;
+                //                     border: 3px solid variables.$bg_org;
+                //                     border-radius: 15px;
+                //                     transition: all .5s ease-in-out;
+                //                     position: absolute;
+                //                     right: 0;
+                //                     top: -1;
+                //                 }
+
+                //                 &:hover::before {
+                //                     width: 70px;
+                //                     right: 0;
+                //                 }
+                //             }
+
+                //             // >.brd {
+                //             //     width: 196px;
+                //             //     height: 78px;
+                //             //     border: 4px solid variables.$bg_org;
+                //             //     border-radius: 15px;
+                //             //     transition: 1s;
+                //             //     position: absolute;
+                //             //     right: 0;
+                //             //     top: 0;
+                //             // }
+
+                //             // &:hover {
+                //             //     >.brd {
+                //             //         width: 70px;
+                //             //         right: 0;
+                //             //     }
+                //             // }
+                //         // }
+                //     }
+                // }
+            }
+
+        }
+
+        >.home_content {
+            width: variables.$max_width;
+            height: 570px;
+            display: flex;
+            justify-content: center;
+
+            >.row {
+                width: 85%;
+                height: inherit;
+                justify-content: space-between;
+
+                >div {
+                    width: 40%;
+                    margin-top: 120px;
+                    position: relative;
+                    z-index: 44;
+
+                    >* {
+                        font-family: fredoka;
+                    }
+
+                    >h3 {
+                        font-size: 24px;
+                        font-weight: 400;
+                        color: variables.$bg_org;
+                    }
+
+                    >h1 {
+                        color: rgb(254, 212, 58);
+                        font-weight: bold;
+                        font-size: 90px;
+                        word-spacing: .2px;
+                    }
+
+                    >p {
+                        padding-top: 33px;
+                        color: white;
+                        width: 400px;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 30px;
+                        font-family: epilogue;
+
+                    }
+
+                    >.content_btn {
+                        margin-top: 60px;
+                        width: 220px;
+                        height: 40%;
+                        position: relative;
+                        right: 0;
+                        top: 0;
+
+                        >.nav_btn {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                }
+
+                >img {
+                    height: 500px;
+                    z-index: 44;
+                }
+            }
+        }
+    }
+
+
+    &::after {
+        content: '';
+        width: 983px;
+        height: 400px;
+        background-color: variables.$bg_org;
+        position: absolute;
+        top: 263px;
+        right: 0;
+        border-radius: 12rem 0 0 12rem;
+        z-index: 3;
+    }
+}

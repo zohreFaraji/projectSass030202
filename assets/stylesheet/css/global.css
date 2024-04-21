@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: freepilo;
+    src: url(../../font/Epilogue/Epilogue-SemiBold.ttf), url(../../font/Fredoka/Fredoka_Condensed-Light.ttf), url(../../font/Fredoka/Fredoka-Medium.ttf), url(../../font/Fredoka/Fredoka-SemiBold.ttf), url(../../font/Epilogue/Epilogue-Black.ttf), url(../../font/Epilogue/Epilogue-Bold.ttf), url(../../font/Epilogue/Epilogue-BoldItalic.ttf), url(../../font/Epilogue/Epilogue-SemiBold.ttf), ;
+}
+
+@font-face {
+    font-family: fredoka;
+    src: url(../../font/Fredoka/Fredoka-SemiBold.ttf)
+}
+@font-face {
+    font-family: epilogue;
+    src: url(../../font/Epilogue/Epilogue-Regular.ttf)
+}
+
+body {
+    font-family: freepilo;
+    font-size: 100%;
+}
+
+body,
+input,
+button {
+    font-size: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* font-family: fredoka; */
+}
+
+.nav_menu {
+    font-family: fredoka;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
