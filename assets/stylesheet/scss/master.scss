@@ -457,5 +457,27 @@ main {
             }
         }
     }
+
     // end about
+    // start banner bottom
+    .banner_bottom {
+        width: variables.$max_width;
+        // height: 200px;
+
+        >.fig {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            overflow: hidden;
+            >figure {
+                width: 296px;
+                >img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    // end banner bottom
 }

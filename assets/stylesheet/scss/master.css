@@ -406,4 +406,21 @@ main .about > .row > div > figure:hover > .row > p {
 main .about > .row > div > figure:hover > .row > a {
   color: black;
   background-color: white;
+}
+main .banner_bottom {
+  width: 100%;
+}
+main .banner_bottom > .fig {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+main .banner_bottom > .fig > figure {
+  width: 296px;
+}
+main .banner_bottom > .fig > figure > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=master.css.map */
