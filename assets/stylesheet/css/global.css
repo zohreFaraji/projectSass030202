@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: freepilo;
-    src: url(../../font/Epilogue/Epilogue-SemiBold.ttf), url(../../font/Fredoka/Fredoka_Condensed-Light.ttf), url(../../font/Fredoka/Fredoka-Medium.ttf), url(../../font/Fredoka/Fredoka-SemiBold.ttf), url(../../font/Epilogue/Epilogue-Black.ttf), url(../../font/Epilogue/Epilogue-Bold.ttf), url(../../font/Epilogue/Epilogue-BoldItalic.ttf), url(../../font/Epilogue/Epilogue-SemiBold.ttf), ;
+    src: url(../../font/Fredoka/Fredoka_Condensed-Light.ttf) ;
 }
 
 @font-face {
@@ -20,8 +20,13 @@
     src: url(../../font/Epilogue/Epilogue-Regular.ttf)
 }
 
+@font-face {
+    font-family: iran;
+    src: url(../../font/IRANSansWeb_Light.ttf)
+}
+
 body {
-    font-family: freepilo;
+    /* font-family: iran; */
     font-size: 100%;
 }
 
@@ -38,7 +43,6 @@ li {
 a {
     text-decoration: none;
     color: inherit;
-    /* font-family: fredoka; */
 }
 
 .nav_menu {

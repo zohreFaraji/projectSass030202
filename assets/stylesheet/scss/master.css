@@ -18,6 +18,7 @@
   top: 0;
 }
 .nav_btn > a > .rec p {
+  font-family: fredoka, iran;
   color: white;
   font-size: 17px;
   line-height: 15px;
@@ -48,7 +49,7 @@
 
 @font-face {
   font-family: freepilo;
-  src: url(../../font/Epilogue/Epilogue-SemiBold.ttf), url(../../font/Fredoka/Fredoka_Condensed-Light.ttf), url(../../font/Fredoka/Fredoka-Medium.ttf), url(../../font/Fredoka/Fredoka-SemiBold.ttf), url(../../font/Epilogue/Epilogue-Black.ttf), url(../../font/Epilogue/Epilogue-Bold.ttf), url(../../font/Epilogue/Epilogue-BoldItalic.ttf), url(../../font/Epilogue/Epilogue-SemiBold.ttf);
+  src: url(../../font/Fredoka/Fredoka_Condensed-Light.ttf);
 }
 @font-face {
   font-family: fredoka;
@@ -58,8 +59,12 @@
   font-family: epilogue;
   src: url(../../font/Epilogue/Epilogue-Regular.ttf);
 }
+@font-face {
+  font-family: iran;
+  src: url(../../font/IRANSansWeb_Light.ttf);
+}
 body {
-  font-family: freepilo;
+  /* font-family: iran; */
   font-size: 100%;
 }
 
@@ -76,7 +81,6 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  /* font-family: fredoka; */
 }
 
 .nav_menu {
@@ -88,53 +92,59 @@ a {
   flex-wrap: wrap;
 }
 
-.top_header {
+main {
+  height: 100%;
+}
+main .top_header, main .top_header .row > header > nav > .nav_menu {
   width: 100%;
-  height: 100vh;
+  height: 800px;
   background-image: url("../../img/home-bg.jpg");
   overflow: hidden;
   background-size: cover;
   position: relative;
 }
-.top_header .row {
+main .top_header .row, main .top_header .row > header > nav > .nav_menu .row {
   height: 777px;
 }
-.top_header .row > header {
+main .top_header .row > header, main .top_header .row > header > nav > .nav_menu .row > header {
   width: 100%;
   height: 140px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
-.top_header .row > header > nav {
+main .top_header .row > header > nav, main .top_header .row > header > nav > .nav_menu .row > header > nav {
   width: 85%;
   height: inherit;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-.top_header .row > header > nav > a {
+main .top_header .row > header > nav > a, main .top_header .row > header > nav > .nav_menu .row > header > nav > a {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
-.top_header .row > header > nav > a > .nav_logo {
+main .top_header .row > header > nav > a > .nav_logo, main .top_header .row > header > nav > .nav_menu .row > header > nav > a > .nav_logo {
   width: 184px;
   height: 70px;
 }
-.top_header .row > header > nav > a > .nav_logo > img {
+main .top_header .row > header > nav > a > .nav_logo > img, main .top_header .row > header > nav > .nav_menu .row > header > nav > a > .nav_logo > img {
   width: 100%;
   height: 100%;
 }
-.top_header .row > header > nav > .nav_menu {
+main .top_header .row > header > nav > .nav_menu, main .top_header .row > header > nav > .nav_menu .row > header > nav > .nav_menu {
   width: 50%;
   height: inherit;
 }
-.top_header .row > header > nav > .nav_menu > ul {
+main .top_header .row > header > nav > .nav_menu > ul, main .top_header .row > header > nav > .nav_menu .row > header > nav > .nav_menu > ul {
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 10px;
 }
-.top_header .row > header > nav > .nav_menu > ul > li > a {
+main .top_header .row > header > nav > .nav_menu > ul > li > a, main .top_header .row > header > nav > .nav_menu .row > header > nav > .nav_menu > ul > li > a {
   color: white;
   display: flex;
   height: 100%;
@@ -144,53 +154,54 @@ a {
   text-transform: capitalize;
   transition: all 0.5s ease-in-out;
 }
-.top_header .row > header > nav > .nav_menu > ul > li > a:hover {
+main .top_header .row > header > nav > .nav_menu > ul > li > a:hover, main .top_header .row > header > nav > .nav_menu .row > header > nav > .nav_menu > ul > li > a:hover {
   color: rgb(243, 66, 76);
 }
-.top_header .row > header > nav > .nav_menu > ul > li > .home {
+main .top_header .row > header > nav > .nav_menu > ul > li > .home, main .top_header .row > header > nav > .nav_menu .row > header > nav > .nav_menu > ul > li > .home {
   color: rgb(243, 66, 76);
 }
-.top_header .row > .home_content {
+main .top_header .row > .home_content, main .top_header .row > header > nav > .nav_menu .row > .home_content {
   width: 100%;
   height: 570px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
-.top_header .row > .home_content > .row {
+main .top_header .row > .home_content > .row, main .top_header .row > header > nav > .nav_menu .row > .home_content > .row {
   width: 85%;
   height: inherit;
   justify-content: space-between;
 }
-.top_header .row > .home_content > .row > div {
+main .top_header .row > .home_content > .row > div, main .top_header .row > header > nav > .nav_menu .row > .home_content > .row > div {
   width: 40%;
   margin-top: 120px;
   position: relative;
   z-index: 44;
 }
-.top_header .row > .home_content > .row > div > * {
-  font-family: fredoka;
+main .top_header .row > .home_content > .row > div > *, main .top_header .row > header > nav > .nav_menu .row > .home_content > .row > div > * {
+  font-family: fredoka, iran;
 }
-.top_header .row > .home_content > .row > div > h3 {
+main .top_header .row > .home_content > .row > div > h3, main .top_header .row > header > nav > .nav_menu .row > .home_content > .row > div > h3 {
   font-size: 24px;
   font-weight: 400;
   color: rgb(243, 66, 76);
 }
-.top_header .row > .home_content > .row > div > h1 {
+main .top_header .row > .home_content > .row > div > h1, main .top_header .row > header > nav > .nav_menu .row > .home_content > .row > div > h1 {
   color: rgb(254, 212, 58);
   font-weight: bold;
   font-size: 90px;
   word-spacing: 0.2px;
 }
-.top_header .row > .home_content > .row > div > p {
-  padding-top: 33px;
+main .top_header .row > .home_content > .row > div > p, main .top_header .row > header > nav > .nav_menu .row > .home_content > .row > div > p {
+  padding-top: 18px;
   color: white;
   width: 400px;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 30px;
-  font-family: epilogue;
+  font-family: iran;
 }
-.top_header .row > .home_content > .row > div > .content_btn {
+main .top_header .row > .home_content > .row > div > .content_btn, main .top_header .row > header > nav > .nav_menu .row > .home_content > .row > div > .content_btn {
   margin-top: 60px;
   width: 220px;
   height: 40%;
@@ -198,16 +209,16 @@ a {
   right: 0;
   top: 0;
 }
-.top_header .row > .home_content > .row > div > .content_btn > .nav_btn {
+main .top_header .row > .home_content > .row > div > .content_btn > .nav_btn, main .top_header .row > header > nav > .nav_menu .row > .home_content > .row > div > .content_btn > .nav_btn {
   position: absolute;
   top: 0;
   right: 0;
 }
-.top_header .row > .home_content > .row > img {
+main .top_header .row > .home_content > .row > img, main .top_header .row > header > nav > .nav_menu .row > .home_content > .row > img {
   height: 500px;
   z-index: 44;
 }
-.top_header::after {
+main .top_header::after, main .top_header .row > header > nav > .nav_menu::after {
   content: "";
   width: 983px;
   height: 400px;
@@ -217,4 +228,182 @@ a {
   right: 0;
   border-radius: 12rem 0 0 12rem;
   z-index: 3;
+}
+main .about {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .about > .row {
+  width: 85%;
+  height: 30%;
+  display: flex;
+  align-content: space-between;
+}
+main .about > .row > * {
+  width: 100%;
+}
+main .about > .row > .foodAbout {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 80px 0 0;
+}
+main .about > .row > .foodAbout > div:nth-of-type(1) {
+  width: 50%;
+}
+main .about > .row > .foodAbout > div:nth-of-type(1) > * {
+  font-family: fredoka, iran;
+}
+main .about > .row > .foodAbout > div:nth-of-type(1) > span {
+  display: flex;
+  padding-bottom: 10px;
+  color: rgb(243, 66, 76);
+  letter-spacing: 2px;
+  margin-bottom: 0.2rem;
+  font-size: 16px;
+}
+main .about > .row > .foodAbout > div:nth-of-type(1) > h2 {
+  width: 60%;
+  font-size: 45px;
+  font-weight: bolder;
+}
+main .about > .row > .foodAbout > div:nth-of-type(2) {
+  width: 50%;
+  height: 250px;
+  font-family: iran;
+}
+main .about > .row > .foodAbout > div:nth-of-type(2) > p {
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(27, 27, 27);
+}
+main .about > .row > .foodAbout > div:nth-of-type(2) > div {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+main .about > .row > .foodAbout > div:nth-of-type(2) > div > img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+main .about > .row > .foodAbout > div:nth-of-type(2) > div > div > h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(15, 15, 15);
+}
+main .about > .row > .foodAbout > div:nth-of-type(2) > div > div > p {
+  color: rgb(26, 25, 25);
+  font-style: italic;
+  font-size: 16px;
+}
+main .about > .row > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+main .about > .row > div > figure {
+  width: 413px;
+  height: 530px;
+  position: relative;
+}
+main .about > .row > div > figure > img {
+  width: 100%;
+  width: 100%;
+  border-radius: 1.75rem;
+}
+main .about > .row > div > figure > div {
+  width: 90%;
+  height: 55px;
+  background-color: rgb(254, 212, 58);
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-family: fredoka, iran;
+}
+main .about > .row > div > figure > .row {
+  background-color: transparent;
+  z-index: 6;
+  width: 85%;
+  height: 90%;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  font-family: iran;
+}
+main .about > .row > div > figure > .row > h3,
+main .about > .row > div > figure > .row > p {
+  color: transparent;
+}
+main .about > .row > div > figure > .row > h3 {
+  font-size: 21px;
+}
+main .about > .row > div > figure > .row > p {
+  margin-top: -90px;
+  line-height: 1.875rem;
+  font-size: 18px;
+}
+main .about > .row > div > figure > .row > a {
+  margin-top: -70px;
+  width: 190px;
+  height: 60px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  color: transparent;
+  font-size: 18px;
+  font-family: fredoka, iran;
+}
+main .about > .row > div > figure::before {
+  content: "";
+  position: absolute;
+  border-radius: 1.75rem;
+  width: 377px;
+  height: 488px;
+  border: 3px solid rgb(254, 212, 58);
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+main .about > .row > div > figure::after {
+  transition: 0.3s;
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1.75rem;
+  background-color: rgba(243, 66, 75, 0.884);
+  z-index: 4;
+}
+main .about > .row > div > figure:hover::after {
+  height: 100%;
+}
+main .about > .row > div > figure:hover > .row > h3 {
+  color: white;
+}
+main .about > .row > div > figure:hover > .row > p {
+  color: white;
+}
+main .about > .row > div > figure:hover > .row > a {
+  color: black;
+  background-color: white;
 }/*# sourceMappingURL=master.css.map */
