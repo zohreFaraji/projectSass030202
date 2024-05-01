@@ -93,7 +93,7 @@ a {
 }
 
 main {
-  height: 100%;
+  overflow-x: hidden;
 }
 main .top_header, main .top_header .row > header > nav > .nav_menu {
   width: 100%;
@@ -409,18 +409,186 @@ main .about > .row > div > figure:hover > .row > a {
 }
 main .banner_bottom {
   width: 100%;
-}
-main .banner_bottom > .fig {
+  height: 286px;
+  margin-bottom: 132px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  overflow: hidden;
 }
-main .banner_bottom > .fig > figure {
+main .banner_bottom > figure {
   width: 296px;
+  height: 100%;
 }
-main .banner_bottom > .fig > figure > img {
+main .banner_bottom > figure > img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main > footer {
+  width: 100%;
+  height: 697px;
+  background-image: url(../../img/home-bg.jpg);
+  display: flex;
+  justify-content: center;
+}
+main > footer > .row {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+}
+main > footer > .row > .about {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main > footer > .row > .about > .contact {
+  width: 70%;
+}
+main > footer > .row > .about > .contact > img {
+  width: 190px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > footer > .row > .about > .contact > p,
+main > footer > .row > .about > .contact .sub {
+  line-height: 1.875rem;
+  color: white;
+}
+main > footer > .row > .about > .contact > p {
+  width: 90%;
+  margin: 40px 0 70px;
+  font-size: 1.125rem;
+  font-family: iran;
+}
+main > footer > .row > .about > .contact > h3 {
+  font-size: 1.5rem;
+  border-bottom: 6px solid yellow;
+  margin-bottom: 2.5rem;
+  display: inline-block;
+  color: white;
+}
+main > footer > .row > .about > .contact > .sub {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+main > footer > .row > .about > .contact > .form {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 65px;
+}
+main > footer > .row > .about > .contact > .form > input {
+  display: flex;
+  width: 565px;
+  padding: 22px 15px;
+  font-size: 17px;
+  margin-right: 20px;
+  border: 1px solid rgb(97, 97, 97);
+  background-color: transparent;
+  outline: none;
+  border-radius: 10px;
+}
+main > footer > .row > .about > .contact > .form > input::-moz-placeholder {
+  color: rgb(97, 97, 97);
+}
+main > footer > .row > .about > .contact > .form > input::placeholder {
+  color: rgb(97, 97, 97);
+}
+main > footer > .row > .about > .contact > .form > .nav_btn > a > .rec {
+  width: 157px;
+}
+main > footer > .row > .about > .contact > .form > .nav_btn > a > .rec::before {
+  content: "";
+  width: 145px;
+}
+main > footer > .row > .about > .contact > .form > .nav_btn > a > .rec:hover::before {
+  width: 50px;
+}
+main > footer > .row > .about > .mail {
+  width: 30%;
+  color: white;
+}
+main > footer > .row > .about > .mail > h3 {
+  font-size: 1.5rem;
+  border-bottom: 6px solid yellow;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+main > footer > .row > .about > .mail > .list {
+  width: 290px;
+  height: 103px;
+  margin-bottom: 15px;
+}
+main > footer > .row > .about > .mail > .list > * {
+  font-family: fredoka, iran;
+  font-size: 15px;
+}
+main > footer > .row > .about > .mail > .list > .day {
+  display: inline-block;
+  width: 90px;
+  margin-right: 20px;
+  line-height: 30px;
+  font-weight: bolder;
+}
+main > footer > .row > .about > .mail > .contactMe {
+  transition: 0.4s ease-in-out;
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  margin-bottom: 30px;
+}
+main > footer > .row > .about > .mail > .contactMe > span {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+main > footer > .row > .about > .mail > .contactMe > span > img {
+  width: 35px;
+  height: 35px;
+}
+main > footer > .row > .about > .mail > .contactMe > span > img:hover {
+  transform: rotateY(180deg);
+}
+main > footer > .row > .about > .mail > .contactMe > .row {
+  display: flex;
+  align-items: center;
+}
+main > footer > .row > .about > .mail > .contactMe > .row > div {
+  height: 50px;
+}
+main > footer > .row > .about > .mail > .contactMe > .row > div > * {
+  width: 100%;
+}
+main > footer > .row > .about > .mail > .contactMe > .row > div > h3 {
+  color: rgb(243, 66, 76);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+main > footer > .row > .about > .mail > .contactMe > .row > div > span {
+  font-family: fredoka, iran;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+main .refrence {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(243, 66, 75, 0.918);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .refrence > h2 {
+  color: white;
+  font-size: 16px;
+  font-family: iran;
+  font-weight: bolder;
 }/*# sourceMappingURL=master.css.map */

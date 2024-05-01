@@ -10,7 +10,7 @@
         width: 80px;
         height: 80px;
         position: fixed;
-        bottom: 17px;
+        bottom: 60px;
         right: 17px;
         z-index: 1000;
 
@@ -28,7 +28,8 @@
             &:hover {
                 /* transform: scale(1.03); */
                 cursor: pointer;
-                transform: perspective(200px) rotate3D(0, 1, 0, 5deg);
+                transform: perspective(700px) rotateY(20deg);
+                /* transform: perspective(400px) rotate3D(0, 1, 0, 10deg); */
 
 
             }
@@ -39,7 +40,7 @@
             height: 40px;
             z-index: 998;
             position: fixed;
-            bottom: 47px;
+            bottom: 70px;
             right: 32px;
             transition: all 1s ease-in-out;
             border: 3px solid rgb(243, 66, 76);
@@ -60,6 +61,7 @@
                 background-color: rgba(243, 66, 75, 0.575);
                 border: 3px solid rgba(211, 206, 206, 0.548);
                 filter: hue-rotate(40%) brightness(110%) contrast(120%);
+
                 >i {
                     color: white;
                 }
