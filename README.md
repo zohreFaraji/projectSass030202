@@ -1,6 +1,4 @@
-# projectRestaurant-Sass
-
-**If you have a lot of information to display on your site, why don't you use my accordion menu**
+# ProjectRestaurant-Sass
 
 ![11](https://github.com/zohreFaraji/projectSass030202/assets/165832749/288e34b2-826c-4aee-b2b8-b5a2672322b2)
 ![12](https://github.com/zohreFaraji/projectSass030202/assets/165832749/9097df3c-938f-461f-b76a-24d1d7503553)
@@ -10,6 +8,8 @@
 ![15](https://github.com/zohreFaraji/projectSass030202/assets/165832749/1555ee45-b3a2-4cbc-9e5e-96068082c46b)
 
 
+ **You can see information about my project**
+ 
 - [Demo Project](https://zohrefaraji.github.io/projectSass030202/)
 
 - Developed by zohre faraji
